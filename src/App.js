@@ -20,7 +20,7 @@ class App extends Component {
     .get(`https://github.com/bhargavi101/bhargaviwebsite/blob/gh-pages/resume.json`)
     .then((response) => {
       this.setState({
-        resumeData: response.data,
+        resumeData: response.data.main,
         dataFetched: true,
       })
     })
@@ -34,6 +34,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
         </header>
+        <h1>{this.state.resumeData.name}</h1>
       </div>
     );
   }
