@@ -19,6 +19,7 @@ class App extends Component {
     axios
     .get(`https://github.com/bhargavi101/bhargaviwebsite/blob/gh-pages/resume.json`)
     .then((response) => {
+      console.log(response.data)
       this.setState({
         resumeData: response.data.main,
         dataFetched: true,
