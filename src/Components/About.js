@@ -29,7 +29,7 @@ class About extends Component {
       <div className="about">
         <div className="row">
            <div className="three columns">
-              <img className="profile-pic"  src="images/Profile.jpg" alt="" />
+              <img className="profile-pic"  src="images/Profile.JPG" alt="" />
            </div>
            <div className="nine columns main-col">
               <h2>About Me</h2>
